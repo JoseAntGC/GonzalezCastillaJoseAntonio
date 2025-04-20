@@ -28,6 +28,10 @@ function sumar($a, $b) {
 function convertirAMayusculas($texto) {
     return strtoupper($texto);
 }
+
+/**
+ * Nuevo comentario
+ */
 ?>
 
 
