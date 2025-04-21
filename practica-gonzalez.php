@@ -1,37 +1,32 @@
 <?php
-/**
- *
- * Este script contiene funciones de ejemplo con documentación en formato DocBlock.
- *
- * @author Jose Antonio Gonzalez
- * @version 1.0
- * @internal Este script es solo para fines educativos.
- */
 
 /**
- * Calcula la suma de dos números.
+ * Clase de utilidades matemáticas.
  *
- * @param float $a El primer número.
- * @param float $b El segundo número.
- * @return float La suma de los dos números.
+ * @package Utilidades
  */
-function sumar($a, $b) {
-    return $a + $b;
+class UtilidadesMatematicas
+{
+    /**
+     * Suma dos números enteros.
+     *
+     * @param int $a El primer número.
+     * @param int $b El segundo número.
+     * @return int La suma de los dos números.
+     */
+    public static function sumar(int $a, int $b): int
+    {
+        return $a + $b;
+    }
+
+    /**
+     * Calcula el área de un círculo.
+     *
+     * @param float $radio El radio del círculo.
+     * @return float El área del círculo.
+     */
+    public static function calcularAreaCirculo(float $radio): float
+    {
+        return pi() * pow($radio, 2);
+    }
 }
-
-/**
- * Convierte una cadena a mayúsculas.
- *
- * @param string $texto La cadena de texto a convertir.
- * @return string La cadena en mayúsculas.
- */
-function convertirAMayusculas($texto) {
-    return strtoupper($texto);
-}
-
-/**
- * Nuevo comentario
- */
-?>
-
-
